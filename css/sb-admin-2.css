@@ -1482,9 +1482,80 @@ pre code {
   }
 }
 
+/* Estilos para las líneas y los círculos en el timeline */
+.timeline::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 4px;
+  background: #007bff;
+  left: 20px;
+  margin-left: -2px;
+}
+
+.timeline-event {
+  position: relative;
+  margin-bottom: 30px;
+}
+
+.timeline-event .timeline-icon {
+  position: absolute;
+  left: 10px;
+  background-color: #007bff;
+  color: white;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Estilos de los detalles de las propuestas */
+.card .card-header .card-header-custom {
+  background-color: #439441;
+  color: #000;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+.card-custom {
+  border-radius: 8px;
+  border: none;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+.form-group label {
+  color: #4a69bd;
+  font-weight: 600;
+}
+.form-group p, .form-control-plaintext {
+  color: #333;
+  font-size: 0.95rem;
+}
+
+.form-control[readonly] {
+  background-color: #f8f9fa;
+  border-radius: 5px;
+}
+
+/* ********************************************** */
+
 .main-bg {
   background-color: #439441;
 }
+
+.main-text-color {
+  color: #439441;
+}
+
+.img-home {
+  width: 95%;
+  height: auto;
+  max-height: 370px; /* Ajusta este valor según lo que necesitas */
+}
+
 
 .table {
   width: 100%;
@@ -10329,7 +10400,7 @@ a:focus {
 }
 
 .sidebar .nav-item {
-  position: sticky; 
+  /*position: sticky; */
   top: 0;           /* Ensure it sticks to the top */
 }
 

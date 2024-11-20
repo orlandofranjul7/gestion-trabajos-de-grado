@@ -12,17 +12,17 @@
     <title>Gestión de Trabajos de grado</title>
 
     <!-- Custom fonts for this template-->
-    <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+    <link href="../vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
     <link
         href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i"
         rel="stylesheet">
 
     <!-- Custom styles for this template-->
-    <link href="css/sb-admin-2.min.css" rel="stylesheet">
-    <link href="css/sb-admin-2.css" rel="stylesheet" href="">
+    <link href="../css/sb-admin-2.min.css" rel="stylesheet">
+    <link href="../css/sb-admin-2.css" rel="stylesheet" href="">
 
     <!-- Custom styles for this page -->
-    <link href="vendor/datatables/dataTables.bootstrap4.min.css" rel="stylesheet">
+    <link href="../vendor/datatables/dataTables.bootstrap4.min.css" rel="stylesheet">
 
 </head>
 
@@ -45,54 +45,31 @@
             <!-- Divider -->
             <hr class="sidebar-divider my-0">
 
+            <!-- Nav Item - Pages Collapse Menu -->
+
             <!-- Nav Item - Dashboard -->
             <li class="nav-item">
-                <a class="nav-link" href="index.html">
+                <a class="nav-link" href="home.html">
                     <i class="fas fa-fw fa-tachometer-alt"></i>
                     <span>Home</span></a>
             </li>
 
-            <!-- Heading -->
-
-            <!-- Nav Item - Pages Collapse Menu -->
-
-            <!-- Nav Item - Utilities Collapse Menu -->
-
-            <!-- Divider -->
-
-            <!-- Heading -->
-
-            <!-- Nav Item - Pages Collapse Menu -->
-
             <!-- Nav Item - Charts -->
             <li class="nav-item">
-                <a class="nav-link" href="charts.html">
+                <a class="nav-link" href="./propuestas.html">
                     <i class="fas fa-fw fa-chart-area"></i>
                     <span>Propuestas</span></a>
             </li>
 
-            <!-- Nav Item - Tables 
             <li class="nav-item">
-                <a class="nav-link" href="tables.html">
-                    <i class="fas fa-fw fa-table"></i>
-                    <span>Tables</span></a>
-            </li>
-            -->
-
-            <li class="nav-item">
-                <a class="nav-link" href="tables.html">
-                    <i class="fas fa-fw fa-table"></i>
-                    <span>Anteproyecto de Grado</span></a>
+                <a class="nav-link" href="./trabajos-de-grado.html">
+                 <i class="fas fa-fw fa-wrench"></i>
+                    <span>Trabajos de Grado</span></a>
             </li>
 
-            <li class="nav-item">
-                <a class="nav-link" href="tables.html">
-                    <i class="fas fa-fw fa-table"></i>
-                    <span>Proyecto de Grado</span></a>
-            </li>
 
             <li class="nav-item">
-                <a class="nav-link" href="tables.html">
+                <a class="nav-link" href="calendario.html">
                     <i class="fas fa-fw fa-table"></i>
                     <span>Calendario</span></a>
             </li>
@@ -213,7 +190,7 @@
                                 </h6>
                                 <a class="dropdown-item d-flex align-items-center" href="#">
                                     <div class="dropdown-list-image mr-3">
-                                        <img class="rounded-circle" src="img/undraw_profile_1.svg"
+                                        <img class="rounded-circle" src="../img/undraw_profile_1.svg"
                                             alt="...">
                                         <div class="status-indicator bg-success"></div>
                                     </div>
@@ -225,7 +202,7 @@
                                 </a>
                                 <a class="dropdown-item d-flex align-items-center" href="#">
                                     <div class="dropdown-list-image mr-3">
-                                        <img class="rounded-circle" src="img/undraw_profile_2.svg"
+                                        <img class="rounded-circle" src="../img/undraw_profile_2.svg"
                                             alt="...">
                                         <div class="status-indicator"></div>
                                     </div>
@@ -237,7 +214,7 @@
                                 </a>
                                 <a class="dropdown-item d-flex align-items-center" href="#">
                                     <div class="dropdown-list-image mr-3">
-                                        <img class="rounded-circle" src="img/undraw_profile_3.svg"
+                                        <img class="rounded-circle" src="../img/undraw_profile_3.svg"
                                             alt="...">
                                         <div class="status-indicator bg-warning"></div>
                                     </div>
@@ -271,7 +248,7 @@
                                 data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                 <span class="mr-2 d-none d-lg-inline text-gray-600 small">of20-0354</span>
                                 <img class="img-profile rounded-circle"
-                                    src="img/undraw_profile.svg">
+                                    src="../img/undraw_profile.svg">
                             </a>
                             <!-- Dropdown - User Information -->
                             <div class="dropdown-menu dropdown-menu-right shadow animated--grow-in"
@@ -299,11 +276,11 @@
 
                 <div class="container-fluid">
                     <!-- Page Heading -->
-                    <h1 class="h3 mb-2 text-gray-800">Propuestas de trabajos de grado</h1>
+                    <h1 class="h2 mb-2 text-gray-800">Propuestas de trabajos de grado</h1>
                 
                     <!-- Contenedor para los botones alineados a la derecha en la misma línea -->
                     <div class="d-flex justify-content-end mb-4">
-                        <a href="#" class="btn btn-primary btn-icon-split">
+                        <a href="agregar-propuesta.html" class="btn btn-primary btn-icon-split">
                             <span class="icon text-white-50">
                                 <i class="fas fa-plus"></i>
                             </span>
@@ -335,40 +312,49 @@
                                         <tr>
                                             <th>Sustentates</th>
                                             <th>Titulo</th>
-                                            <th>Descripcion</th>
                                             <th>Fecha</th>
                                             <th>Estado</th>
+                                            <th>Acciones</th>
                                         </tr>
                                     </thead>
                                     <tfoot>
                                         <tr>
                                             <th>Sustentates</th>
                                             <th>Titulo</th>
-                                            <th>Descripción</th>
                                             <th>Fecha</th>
                                             <th>Estado</th>
+                                            <th>Acciones</th>
                                         </tr>
                                     </tfoot>
                                     <tbody>
                                         <tr>
                                             <td>Orlando Franjul</td>
                                             <td>Automatización de proyectos de grado</td>
-                                            <td>Lorem Ipsum</td>
                                             <td>2024/08/25</td>
                                             <td>APROBADO</td>
+                                            <td class="d-flex justify-content-center">
+                                                <a href="modificar-propuesta.html" class="text-primary mr-3"><i class="fas fa-pencil-alt"></i></a>
+                                                <a href="#" class="text-danger mr-3" data-toggle="modal" data-target="#removeModal"><i class="fas fa-trash-alt"></i></a>
+                                                <a href="detalles-propuesta.html" class="text-secondary"><i class="fas fa-eye"></i></a>
+                                            </td>
                                         </tr>
                                         <tr>
                                             <td>Esmarling Ramos | Orlando Franjul</td>
                                             <td>Plataforma de inmobiliaria</td>
-                                            <td>Lorem Ipsum</td>
                                             <td>2024/03/29</td>
                                             <td>EN ESPERA</td>
+                                            <td class="d-flex justify-content-center">
+                                                <a href="modificar-propuesta.html" class="text-primary mr-3"><i class="fas fa-pencil-alt"></i></a>
+                                                <a href="#" class="text-danger mr-3" data-toggle="modal" data-target="#removeModal"><i class="fas fa-trash-alt"></i></a>
+                                                <a href="detalles-propuesta.html" class="text-secondary"><i class="fas fa-eye"></i></a>
+                                            </td>
                                         </tr>
                                     </tbody>
                                 </table>
                             </div>
                         </div>
-                    </div>
+
+                    <!-- Botón para mostrar u ocultar el historial de cambios -->
 
                 </div>
                 <!-- /.container-fluid -->
@@ -399,6 +385,27 @@
         <i class="fas fa-angle-up"></i>
     </a>
 
+
+        <!-- Remove Modal-->
+        <div class="modal fade" id="removeModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Esta seguro quie quiere eliminar esta propuesta?</h5>
+                    <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">×</span>
+                    </button>
+                </div>
+                <div class="modal-body">Seleccione "Eliminar" si esta decidido en borrar esta propuesta.</div>
+                <div class="modal-footer">
+                    <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancelar</button>
+                    <a class="btn btn-danger" href="login.html">Eliminar</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <!-- Logout Modal-->
     <div class="modal fade" id="logoutModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
         aria-hidden="true">
@@ -420,21 +427,21 @@
     </div>
 
     <!-- Bootstrap core JavaScript-->
-    <script src="vendor/jquery/jquery.min.js"></script>
-    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="../vendor/jquery/jquery.min.js"></script>
+    <script src="../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
     <!-- Core plugin JavaScript-->
-    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+    <script src="../vendor/jquery-easing/jquery.easing.min.js"></script>
 
     <!-- Custom scripts for all pages-->
-    <script src="js/sb-admin-2.min.js"></script>
+    <script src="../js/sb-admin-2.min.js"></script>
 
     <!-- Page level plugins -->
-    <script src="vendor/datatables/jquery.dataTables.min.js"></script>
-    <script src="vendor/datatables/dataTables.bootstrap4.min.js"></script>
+    <script src="../vendor/datatables/jquery.dataTables.min.js"></script>
+    <script src="../vendor/datatables/dataTables.bootstrap4.min.js"></script>
 
     <!-- Page level custom scripts -->
-    <script src="js/demo/datatables-demo.js"></script>    
+    <script src="../js/demo/datatables-demo.js"></script>    
 
 </body>
 
