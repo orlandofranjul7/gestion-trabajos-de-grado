@@ -1,0 +1,179 @@
+[
+  {
+    "ContainingType": "AuthController",
+    "Method": "Login",
+    "RelativePath": "api/Auth/login",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "GestionTrabajosDeGradoAPI.ViewModels.LoginRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "AuthController",
+    "Method": "Logout",
+    "RelativePath": "api/Auth/logout",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "GestionTrabajosDeGradoAPI.Controllers.EstudianteController",
+    "Method": "ObtenerEstudiantesPorEscuela",
+    "RelativePath": "api/Estudiante/por-escuela",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "GestionTrabajosDeGradoAPI.Controllers.LineaInvestigacionController",
+    "Method": "GetInvestigacionesPorUsuario",
+    "RelativePath": "api/LineaInvestigacion/investigaciones",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "GestionTrabajosDeGradoAPI.Controllers.PropuestasController",
+    "Method": "GetAll",
+    "RelativePath": "api/Propuestas",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "GestionTrabajosDeGradoAPI.Controllers.PropuestasController",
+    "Method": "GetById",
+    "RelativePath": "api/Propuestas/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "GestionTrabajosDeGradoAPI.Controllers.PropuestasController",
+    "Method": "EliminarPropuesta",
+    "RelativePath": "api/Propuestas/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "GestionTrabajosDeGradoAPI.Controllers.PropuestasController",
+    "Method": "AgregarPropuesta",
+    "RelativePath": "api/Propuestas/agregar",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "GestionTrabajosDeGradoAPI.ViewModels.PropuestaRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "GestionTrabajosDeGradoAPI.Controllers.PropuestasController",
+    "Method": "ObtenerPropuestasPorRol",
+    "RelativePath": "api/Propuestas/mis-propuestas",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "GestionTrabajosDeGradoAPI.Controllers.PropuestasController",
+    "Method": "ModificarPropuesta",
+    "RelativePath": "api/Propuestas/modificar",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "GestionTrabajosDeGradoAPI.ViewModels.PropuestaRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "GestionTrabajosDeGradoAPI.Controllers.TrabajosDeGradoController",
+    "Method": "GetAll",
+    "RelativePath": "api/TrabajosDeGrado",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "GestionTrabajosDeGradoAPI.Controllers.TrabajosDeGradoController",
+    "Method": "GetTrabajosByEstudianteId",
+    "RelativePath": "api/TrabajosDeGrado/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "GestionTrabajosDeGradoAPI.Controllers.WeatherForecastController",
+    "Method": "Get",
+    "RelativePath": "WeatherForecast",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[GestionTrabajosDeGradoAPI.WeatherForecast, GestionTrabajosDeGradoAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ],
+    "EndpointName": "GetWeatherForecast"
+  }
+]
